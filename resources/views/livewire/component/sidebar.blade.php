@@ -1,7 +1,11 @@
+@php
+use App\Models\Hello;
+@endphp
+
 <div class="h-screen w-1/6 border mr-3">
     <div class="mb-5">
         <h1 class="text-3xl text-center p-3 font-semibold border">
-            你好 Joenathan 👋
+            {{ Hello::inRandomOrder()->first()->text }}, Joenathan 👋
         </h1>
     </div>
     <div>
